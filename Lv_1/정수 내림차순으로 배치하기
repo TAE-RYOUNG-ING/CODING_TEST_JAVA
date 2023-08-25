@@ -1,0 +1,23 @@
+
+
+
+// 풀이시간 00:28:36 & 제출점수 100점
+
+
+
+class Solution {
+    public long solution(long n) {
+        
+        String[] str = Long.toString(n).split("");
+		Arrays.sort(str, Collections.reverseOrder());
+
+		String answer = "";
+        
+        for(String s : str) {
+        	answer += s;
+        }
+        
+        return Long.parseLong(answer);
+        
+    }
+}
