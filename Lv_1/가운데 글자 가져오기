@@ -1,0 +1,26 @@
+
+
+
+// 풀이시간 00:18:02 & 제출점수 100점
+
+
+
+class Solution {
+  public String solution(String s) {
+      
+    String answer = "";
+    String[] arr = s.split("");
+  
+    for(int i=0; i<arr.length; i++) {
+      if(s.length() % 2 != 0) {
+        answer = arr[s.length()/2];
+      }
+    
+      if(s.length() % 2 == 0 && i + (i+2) == s.length()) {
+        answer = arr[i] + arr[i+1];
+      }
+    }
+      
+    return answer;
+  }
+}
