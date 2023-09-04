@@ -1,0 +1,26 @@
+
+
+
+// 풀이시간 00:07:23 & 제출점수 100점
+
+
+
+class Solution {
+  public String solution(int n) {
+      
+    String answer = "";
+    
+    for(int i=0; i<n; i++){
+        answer += (i%2 == 0)? "수":"박";
+    }
+    
+    return answer;
+  }
+}
+
+
+
+// Stream 사용 풀이법
+// return IntStream.rangeClosed(1, n)
+                   .mapToObj(i -> i%2 != 0? "수":"박")
+                   .collect(Collectors.joining());
