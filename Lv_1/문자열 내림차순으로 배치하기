@@ -1,0 +1,24 @@
+
+
+// 풀이시간 11:46
+
+
+class Solution {
+  public String solution(String s) {
+     
+    String answer = "";
+    char[] arr = s.toCharArray();
+    Arrays.sort(arr);
+    
+    StringBuilder sb = new StringBuilder(new String(arr));
+    answer = sb.reverse().toString();
+    return answer;
+  }
+}
+
+
+// Stream 사용할 경우
+// 그러나 실행속도는 StringBuilder를 사용하는 것이 더 빠름
+// return Stream.of(s.split(""))
+//              .sorted(Comparator.reverseOrder())
+//              .collect(Collectors.joining());
