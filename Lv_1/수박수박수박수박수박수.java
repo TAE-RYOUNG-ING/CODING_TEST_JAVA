@@ -1,8 +1,5 @@
 
-
-
-// 풀이시간 00:07:23 & 제출점수 100점
-
+// 풀이시간 07:23
 
 
 class Solution {
@@ -19,8 +16,7 @@ class Solution {
 }
 
 
-
 // Stream 사용 풀이법
 // return IntStream.rangeClosed(1, n)
-                   .mapToObj(i -> i%2 != 0? "수":"박")
-                   .collect(Collectors.joining());
+//                 .mapToObj(i -> i%2 != 0? "수":"박")
+//                 .collect(Collectors.joining());
